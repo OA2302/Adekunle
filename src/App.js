@@ -8,7 +8,7 @@ import BackgroundAudio from './component/BackgroundAudio';
 
 function App() {
   const [cars, setCars] = useState(CarsData);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage,  setCurrentPage] = useState(1);
   const carsPerPage = 9;
   const [filter, setFilter] = useState('All'); // State for the selected filter option
 
