@@ -1,0 +1,34 @@
+form {
+    display: flex;
+}
+textarea {
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.btn {
+    background-color: #0056b3;
+    width: 70px;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    font-size: medium;
+    height: 40px;
+    margin-left: 5px;
+}
+
+li {
+    margin-left: 0;
+    width: 60%;
+    padding: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: #fff;
+}
+ul {
+    max-height: 100px;
+    overflow-y: scroll;
+}

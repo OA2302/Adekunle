@@ -1,0 +1,150 @@
+body{
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-size: 400% 400%;
+  animation: rainbowFlash1 4.6s linear infinite;
+}
+@keyframes rainbowFlash1 {
+    0%, 100% { color: rgb(223, 223, 223); }
+    14% { color: rgb(255, 255, 255); }
+    42% { color: rgba(0, 0, 0, 0.265); }
+    71% { color: rgb(0, 0, 0); }
+    85% { color: transparent; }
+}
+audio {
+  display: none;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.name {
+  animation: rainbowFlash2 1.6s linear infinite;
+}
+@keyframes rainbowFlash2 {
+    0%, 100% { color: rgba(0, 0, 0, 0.059); }
+    14% { color: rgba(0, 0, 0, 0.34); }
+    28% { color: rgba(0, 0, 0, 0.648); }
+    42% { color: rgb(39, 39, 39); }
+    57% { color: rgba(0, 0, 0, 0.861); }
+    71% { color: rgba(107, 107, 107, 0.527); }
+    85% { color: transparent; }
+}
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  margin-bottom: 20px;
+}
+select {
+  border: #ccc;
+  background: transparent;
+}
+option {
+  background: #ccc;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Style for the search bar */
+.SearchBar {
+  margin-left: auto;
+}
+
+/* Style for the filter bar */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-left: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border: none;
+}
+footer small {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  animation: rainbowFlash2 1.6s linear infinite;
+}
+@keyframes rainbowFlash2 {
+    0%, 100% { color: rgba(255, 0, 0, 0.059); }
+    14% { color: rgba(38, 103, 138, 0.34); }
+    28% { color: rgb(30, 112, 90); }
+    42% { color: rgb(33, 194, 135); }
+    57% { color: rgba(0, 0, 0, 0.861); }
+    71% { color: rgba(146, 20, 139, 0.527); }
+    85% { color: transparent; }
+}
+
+@media (max-width: 768px) {
+  body {
+    min-width:  300px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .SearchBar {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .filter-bar {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .CarList {
+    grid-template-columns: 1fr;
+  }
+
+  .car-card {
+    margin-bottom: 20px;
+  }
+}

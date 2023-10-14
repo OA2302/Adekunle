@@ -1,0 +1,9 @@
+.rent-button {
+    background-color: #0056b3;
+    width: 100px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    font-size: medium;
+    height: 35px;
+}

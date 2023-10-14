@@ -1,0 +1,123 @@
+/* Car Card styles */
+.car-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .car-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .car-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .car-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .car-card p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+  }
+
+.car-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  width: 280px;
+}
+
+.car-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.car-card:hover img {
+  transform: scale(1.1); /* Adjust the scale factor to control the zoom level */
+}
+.flex {
+  display: flex;
+  gap: 50px;
+  background: #0078d4;
+}
+.car-card h3 {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.car-details {
+  margin-top: 20px;
+}
+
+.car-details p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #555;
+}
+
+
+
+.like-button {
+  color: rgb(255, 0, 43);
+
+}
+.flx {
+  display: flex;
+  gap: 10px;
+  border: none;
+  background-color: #fff;
+}
+
+
+
+
+
+
+@keyframes rotateLike {
+  0% {
+    transform: rotate(0deg);
+    font-size: large;
+  }
+  50% {
+    transform: rotate(40deg);
+    font-size: larger;
+  }
+  100% {
+    transform: rotate(0deg);
+    font-size: larger;
+  }
+}
+
+/* Apply the animation to the like-button class when the like-button-clicked class is added */
+.like-button.like-button-clicked {
+  color: #0056b3;
+  animation: rotateLike 0.5s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+@media screen and (max-width: 768px) {
+  .car-card {
+    padding: 10px; 
+    width: 85%;
+    justify-items: center;
+  }
+.flex {
+  display: flex;
+}
+}
